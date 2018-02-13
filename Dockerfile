@@ -9,7 +9,7 @@ RUN     apt-get -yqq update && \
         apt-get clean -y
 
 ## add jonathonf/ffmpeg ppa
-RUN     echo "deb http://ppa.launchpad.net/jonathonf/ffmpeg-3/ubuntu xenial main \n
+RUN     echo "deb http://ppa.launchpad.net/jonathonf/ffmpeg-3/ubuntu xenial main \n\
               deb-src http://ppa.launchpad.net/jonathonf/ffmpeg-3/ubuntu xenial main" \
         >> /etc/apt/sources.list && \
         apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4AB0F789CBA31744CC7DA76A8CF63AD3F06FC659
